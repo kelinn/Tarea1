@@ -15,6 +15,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
       <div className="form-group">
         <label htmlFor="text">Text:</label>
         <input
+          data-testid="form-field"
           className="form-control"
           ref={register}
           type="text"
@@ -23,7 +24,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
         />
       </div>
       <div className="form-group">
-        <button type="submit" className="btn btn-primary">
+        <button data-testid="form-btn" type="submit" className="btn btn-primary">
           Save Todo
         </button>
       </div>
